@@ -14,7 +14,7 @@ class CourierFactory
 {
 public:
     virtual    ~CourierFactory() {}
-    virtual void createCourier(string time, string pizza,string addres) = 0;
+    virtual void createCourier(string const &time, string const &pizza,string const &addres) = 0;
 
 };
 
