@@ -17,15 +17,8 @@ void BeconBuilder::makeSauce() { pizza->SetSauce("hot"); }
 
 void BeconBuilder::makeSpecies() { pizza->SetSpecies("mashrooms and fruits"); }
 
-void AnyBuilder::makeSize(string s) { pizza->SetSize(s); }
+void DodoBuilder::makeSize() { pizza->SetSize("middle"); }
 
-void AnyBuilder::makeSauce(string s) { pizza->SetSauce(s); }
+void DodoBuilder::makeSauce() { pizza->SetSauce("cheese"); }
 
-void AnyBuilder::makeSpecies(string s) { pizza->SetSpecies(s); }
-
-void AnyBuilder::makePizza(string _size, string _sauce, string _species)
-{
-    makeSize(_size);
-    makeSauce(_sauce);
-    makeSpecies(_species);
-}
+void DodoBuilder::makeSpecies() { pizza->SetSpecies("Meatspecies"); }

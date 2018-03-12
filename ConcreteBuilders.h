@@ -9,7 +9,6 @@
 #include <iostream>
 #include "Builder.h"
 
-using namespace std;
 // ConcreteBuilder1
 class PepperoniBuilder : public PizzaBuilder
 {
@@ -35,15 +34,15 @@ public:
 };
 
 //concrete Builder3
-class AnyBuilder : public PizzaBuilder
+class DodoBuilder : public PizzaBuilder
 {
 public:
-    AnyBuilder() : PizzaBuilder() {}
-    ~AnyBuilder() {}
-    void makePizza(string _size, string _sauce, string _species);
-    void makeSize(string s) ;
-    void makeSauce(string s) ;
-    void makeSpecies(string s) ;
+    DodoBuilder() : PizzaBuilder() {}
+    ~DodoBuilder() {}
+
+    void makeSize() ;
+    void makeSauce() ;
+    void makeSpecies() ;
 
 };
 

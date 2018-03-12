@@ -4,15 +4,19 @@
 
 #include "Product.h"
 
-void Pizza::SetSize(const string& d) { psize = d; }
-void Pizza::SetSauce(const string& s) { psauce = s; }
-void Pizza::SetSpecies(const string& p) { pspecies = p; }
+std::string Pizza::GetSize() { return psize; }
+std::string Pizza::GetSauce() { return psauce; }
+std::string Pizza::GetSpecies() { return pspecies; }
+
+void Pizza::SetSize(const std::string d) { psize = d; }
+void Pizza::SetSauce(const std::string s) { psauce = s; }
+void Pizza::SetSpecies(const std::string p) { pspecies = p; }
 
 void Pizza::Status()
 {
-    cout << "   Dear visitor !" << endl
+    std::cout << "   Dear visitor !" << std::endl
          << "Pizza size is " << psize
          << ", sauce is " << psauce
          << " and species are " << pspecies
-         << " ! " << endl << "   Bon apetite !!!"<<endl;
+         << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
 }

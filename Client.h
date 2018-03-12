@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include "courier.h"
-using namespace std;
 
 // Client
 class Client
@@ -16,7 +15,7 @@ class Client
 private:
     courier cour;
 public:
-    Client(string address, string tim, string pizza):
+    Client(std::string const &address, std::string const &tim, std::string const &pizza):
             cour(pizza, tim, address)
     {
     }

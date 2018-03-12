@@ -7,18 +7,17 @@
 #include "Product.h"
 #include <iostream>
 #include <memory>
-using namespace std;
-// Abstract PizzaBuilder
+// PizzaBuilder
 class PizzaBuilder
 {
 protected:
-    std::shared_ptr<Pizza> pizza;
+    Pizza* pizza;
 public:
     PizzaBuilder() {}
     virtual ~PizzaBuilder() {}
-    std::shared_ptr<Pizza>  GetPizza();
+    Pizza*  GetPizza();
 
-    void makePizza();
+    void makePizza(std::string Name);
     virtual void makeSize()=0;
     virtual void makeSauce()=0;
     virtual void makeSpecies()=0;

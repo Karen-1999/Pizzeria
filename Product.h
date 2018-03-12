@@ -7,7 +7,6 @@
 
 #include <string>
 #include <iostream>
-using namespace std;
 // Product Pizza
 class Pizza
 {
@@ -15,17 +14,63 @@ public:
     Pizza() { }
     ~Pizza() { }
 
-    void SetSize(const string& d) ;
-    void SetSauce(const string& s) ;
-    void SetSpecies(const string& p) ;
+    std::string GetSize() ;
+    std::string GetSauce() ;
+    std::string GetSpecies() ;
+    void SetSize(std::string d) ;
+    void SetSauce(std::string s) ;
+    void SetSpecies(std::string p) ;
+    virtual void Status();
 
-    void Status();
 
-private:
-    string psize;
-    string psauce;
-    string pspecies;
+    std::string psize;
+    std::string psauce;
+    std::string pspecies;
+};
+
+class Pepperoni : public Pizza{
+public:
+    Pepperoni() : Pizza() {}
+    ~Pepperoni(){}
+
+    void Status()
+    {
+        std::cout << "   Dear visitor !" << std::endl
+                  << "Pizza size is " << psize
+                  << ", sauce is " << psauce
+                  << " and species are " << pspecies
+                  << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
+    }
 };
 
 
+class Becon : public Pizza{
+public:
+    Becon() : Pizza() {}
+    ~Becon(){}
+
+    void Status()
+    {
+        std::cout << "   Dear visitor !" << std::endl
+                  << "Pizza size is " << psize
+                  << ", sauce is " << psauce
+                  << " and species are " << pspecies
+                  << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
+    }
+};
+
+class Dodo : public Pizza{
+public:
+    Dodo() : Pizza() {}
+    ~Dodo(){}
+
+    void Status()
+    {
+        std::cout << "   Dear visitor !" << std::endl
+                  << "Pizza size is " << psize
+                  << ", sauce is " << psauce
+                  << " and species are " << pspecies
+                  << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
+    }
+};
 #endif //UNTITLED2_PRODUCT_H

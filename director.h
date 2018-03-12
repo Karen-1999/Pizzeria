@@ -8,7 +8,6 @@
 #include <iostream>
 #include "Builder.h"
 #include "Product.h"
-using namespace std;
 // Director
 
 class Casser
@@ -20,7 +19,7 @@ public:
     ~Casser() { }
 
     void SetPizzaBuilder(PizzaBuilder* b);
-    std::shared_ptr<Pizza> GetPizza();
+    Pizza* GetPizza();
     void ConstructPizza();
 };
 

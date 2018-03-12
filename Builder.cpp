@@ -3,10 +3,16 @@
 //
 
 #include "Builder.h"
-void PizzaBuilder::makePizza()
+
+void PizzaBuilder::makePizza(std::string Name)
 {
-    pizza.reset (new Pizza);
+    if(Name == "Pepperoni")
+        pizza = new Pepperoni;
+    if(Name == "Becon")
+        pizza = new Pepperoni;
+    if(Name == "Dodo")
+        pizza = new Dodo;
 }
 
-std::shared_ptr<Pizza> PizzaBuilder::GetPizza(){
+Pizza* PizzaBuilder::GetPizza(){
     return pizza; }

@@ -7,7 +7,6 @@
 void Casser::ConstructPizza()
 {
 
-    pizzaBuilder->makePizza();
     pizzaBuilder->makeSize();
     pizzaBuilder->makeSauce();
     pizzaBuilder->makeSpecies();
@@ -18,7 +17,7 @@ void Casser::SetPizzaBuilder(PizzaBuilder *b)
     pizzaBuilder = b;
 }
 
-std::shared_ptr<Pizza> Casser::GetPizza()
+Pizza* Casser::GetPizza()
 {
     return pizzaBuilder->GetPizza();
 }

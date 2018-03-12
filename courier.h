@@ -6,18 +6,17 @@
 #define UNTITLED2_COURIER_H
 
 #include <string>
-using namespace std;
 
 //product
 class courier
 {
 
 public:
-    courier(string p, string t, string a) : pizza(p), time(t), addres(a){}
+    courier(std::string p, std::string t, std::string a) : pizza(p), time(t), addres(a){}
 private:
-    string pizza;
-    string time;
-    string addres;
+    std::string pizza;
+    std::string time;
+    std::string addres;
 };
 
 

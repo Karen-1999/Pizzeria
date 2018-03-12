@@ -7,14 +7,13 @@
 
 #include "courier.h"
 #include <string>
-using namespace std;
 
 //abstractFactory
 class CourierFactory
 {
 public:
     virtual    ~CourierFactory() {}
-    virtual void createCourier(string const &time, string const &pizza,string const &addres) = 0;
+    virtual void createCourier(std::string const &time, std::string const &pizza,std::string const &addres) = 0;
 
 };
 
