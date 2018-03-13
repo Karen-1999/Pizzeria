@@ -6,7 +6,7 @@
 
 void Casser::ConstructPizza()
 {
-
+    pizzaBuilder->makePizza();
     pizzaBuilder->makeSize();
     pizzaBuilder->makeSauce();
     pizzaBuilder->makeSpecies();

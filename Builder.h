@@ -17,7 +17,7 @@ public:
     virtual ~PizzaBuilder() {}
     Pizza*  GetPizza();
 
-    void makePizza(std::string Name);
+    virtual void makePizza() = 0;
     virtual void makeSize()=0;
     virtual void makeSauce()=0;
     virtual void makeSpecies()=0;

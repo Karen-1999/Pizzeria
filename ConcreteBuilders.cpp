@@ -22,3 +22,19 @@ void DodoBuilder::makeSize() { pizza->SetSize("middle"); }
 void DodoBuilder::makeSauce() { pizza->SetSauce("cheese"); }
 
 void DodoBuilder::makeSpecies() { pizza->SetSpecies("Meatspecies"); }
+
+
+void DodoBuilder::makePizza()
+{
+    pizza = new Dodo;
+}
+
+void PepperoniBuilder::makePizza()
+{
+    pizza = new Pepperoni;
+}
+
+void BeconBuilder::makePizza()
+{
+    pizza = new Becon;
+}

@@ -15,12 +15,11 @@ class PepperoniBuilder : public PizzaBuilder
 public:
     PepperoniBuilder() : PizzaBuilder() {}
     ~PepperoniBuilder(){}
-
+    void makePizza();
     void makeSize() ;
     void makeSauce() ;
     void makeSpecies() ;
 };
-
 // ConcreteBuilder2
 class BeconBuilder : public PizzaBuilder
 {
@@ -28,6 +27,7 @@ public:
     BeconBuilder() : PizzaBuilder() {}
     ~BeconBuilder() {}
 
+    void makePizza();
     void makeSize() ;
     void makeSauce() ;
     void makeSpecies() ;
@@ -40,6 +40,7 @@ public:
     DodoBuilder() : PizzaBuilder() {}
     ~DodoBuilder() {}
 
+    void makePizza();
     void makeSize() ;
     void makeSauce() ;
     void makeSpecies() ;
