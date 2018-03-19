@@ -22,7 +22,7 @@ public:
     void SetSpecies(std::string p) ;
     virtual void Status();
 
-
+private:
     std::string psize;
     std::string psauce;
     std::string pspecies;
@@ -36,9 +36,9 @@ public:
     void Status()
     {
         std::cout << "   Dear visitor !" << std::endl
-                  << "Pizza size is " << psize
-                  << ", sauce is " << psauce
-                  << " and species are " << pspecies
+                  << "Pizza size is " << GetSize()
+                  << ", sauce is " << GetSauce()
+                  << " and species are " << GetSpecies()
                   << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
     }
 };
@@ -52,9 +52,9 @@ public:
     void Status()
     {
         std::cout << "   Dear visitor !" << std::endl
-                  << "Pizza size is " << psize
-                  << ", sauce is " << psauce
-                  << " and species are " << pspecies
+                  << "Pizza size is " << GetSize()
+                  << ", sauce is " << GetSauce()
+                  << " and species are " << GetSpecies()
                   << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
     }
 };
@@ -67,9 +67,9 @@ public:
     void Status()
     {
         std::cout << "   Dear visitor !" << std::endl
-                  << "Pizza size is " << psize
-                  << ", sauce is " << psauce
-                  << " and species are " << pspecies
+                  << "Pizza size is " << GetSize()
+                  << ", sauce is " << GetSauce()
+                  << " and species are " << GetSpecies()
                   << " ! " << std::endl << "   Bon apetite !!!"<<std::endl;
     }
 };
